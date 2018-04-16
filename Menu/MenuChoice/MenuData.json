@@ -1,187 +1,66 @@
 {
     "data": {
         "productType": [
+                        
                         {
-                        "typeName": "category 1",
+                        "typeName": "Sandwiches",
                         "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4"
+                                        "Roast beef   $9.50",
+                                        "BBQ Pulled Beef   $8.95",
+                                        "Pastrami   $10.95",
+                                        "Reuben   $11.95"
+                                        ]
+                        },
+                        
+                        {
+                        "typeName": "Seafood",
+                        "productName": [
+                                        "Fish Plate   $12.95",
+                                        "Clam Plate   Mkt Price",
+                                        "Clam Roll   Mkt Price"
+                                        ]
+                        },
+                        
+                        {
+                        "typeName": "Salads",
+                        "productName": [
+                                        "Garden Salad   $5.95",
+                                        "Caesar Salad   $6.95",
+                                        "Greek Salad   $8.75"
                                         ]
                         },
                         {
-                        "typeName": "category 2",
+                        "typeName": "Soups & Chowders",
                         "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3"
+                                        "Clam Chowder   $6.75",
+                                        "Chicken Noodle Soup   $4.95",
+                                        "Beef Chili   $4.95"
+                                        
                                         ]
                         },
                         {
-                        "typeName": "category 3",
+                        "typeName": "Kid's Meals",
                         "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3"
+                                        "Hamburger Plate   $5.95",
+                                        "Cheeseberger Plate   $6.25",
+                                        "Hotdog Plate   $5.25",
+                                        "Grilled Cheese Plate   $5.25",
+                                        "Chicken Finger Plate   $6.75"
                                         ]
                         },
                         {
-                        "typeName": "category 4",
+                        "typeName": "Sides",
                         "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 5",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 6",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 7",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 8",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 9",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 10",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 11",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 12",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 13",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 14",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 15",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
-                                        ]
-                        },
-                        {
-                        "typeName": "category 16",
-                        "productName": [
-                                        "food 1",
-                                        "food 2",
-                                        "food 3",
-                                        "food 4",
-                                        "food 5",
-                                        "food 6",
-                                        "food 7"
+                                        "French Fries   $7.95",
+                                        "Onion Rings   $9.95",
+                                        "Coleslaw   $7.95",
+                                        "Fried Shrimp   $24.95",
+                                        "Cheese Fries   $6.95",
+                                        "Chicken Finger   $10.95",
+                                        "Mac & Cheese   $3.50"
                                         ]
                         }
+                        
                         ]
     }
 }
