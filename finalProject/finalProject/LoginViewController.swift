@@ -8,6 +8,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // 1
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            // 2
+            if user != nil {
+                // 3
+                self.performSegue(withIdentifier: "LoginToUser", sender: nil)
+            }
+        }
+    }
 
     //Login Action
     @IBAction func loginAction(_ sender: AnyObject) {
@@ -29,7 +42,7 @@ class LoginViewController: UIViewController {
                 if error == nil {
                     
                     //Print into the console if successfully logged in
-                    print("You have successfully logged in")
+                    //print("You have successfully logged in")
                     
                     //Go to the HomeViewController if the login is sucessful
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")

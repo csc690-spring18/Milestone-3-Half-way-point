@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0B0245CFB1D5BBEFA8CDDFD5 /* Pods_finalProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DF8F9FB9FE6F5FF315E3AA /* Pods_finalProject.framework */; };
+		E85F61F320872FAC00A2D242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F61F220872FAC00A2D242 /* User.swift */; };
+		E85F61F52087304400A2D242 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85F61F42087304400A2D242 /* UserInfo.swift */; };
+		E88BB5792087012B009F0C26 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88BB5782087012B009F0C26 /* ProfileViewController.swift */; };
+		E88BB57B2087296E009F0C26 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88BB57A2087296E009F0C26 /* EditViewController.swift */; };
 		E8CAC0FD207F31CC0074B20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAC0FC207F31CC0074B20F /* AppDelegate.swift */; };
-		E8CAC0FF207F31CC0074B20F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CAC0FE207F31CC0074B20F /* ViewController.swift */; };
 		E8CAC102207F31CC0074B20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CAC100207F31CC0074B20F /* Main.storyboard */; };
 		E8CAC104207F31CC0074B20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CAC103207F31CC0074B20F /* Assets.xcassets */; };
 		E8CAC107207F31CC0074B20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CAC105207F31CC0074B20F /* LaunchScreen.storyboard */; };
@@ -35,10 +38,13 @@
 		494B72DE364F70F54D57C0A1 /* Pods-finalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-finalProject/Pods-finalProject.debug.xcconfig"; sourceTree = "<group>"; };
 		76DF8F9FB9FE6F5FF315E3AA /* Pods_finalProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finalProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		803F47EEFF478FF1FAF3D36D /* Pods-finalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-finalProject/Pods-finalProject.release.xcconfig"; sourceTree = "<group>"; };
+		E85F61F220872FAC00A2D242 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E85F61F42087304400A2D242 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		E88BB5782087012B009F0C26 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E88BB57A2087296E009F0C26 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		E8BA00EF2086F73F007636E0 /* finalProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = finalProject.entitlements; sourceTree = "<group>"; };
 		E8CAC0F9207F31CC0074B20F /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CAC0FC207F31CC0074B20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8CAC0FE207F31CC0074B20F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8CAC101207F31CC0074B20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8CAC103207F31CC0074B20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8CAC106207F31CC0074B20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,16 +118,19 @@
 		E8CAC0FB207F31CC0074B20F /* finalProject */ = {
 			isa = PBXGroup;
 			children = (
-				E8BA00EF2086F73F007636E0 /* finalProject.entitlements */,
-				E8D315E5208468AF00A52E21 /* SignUpViewController.swift */,
-				E8D315E4208468AE00A52E21 /* HomeViewController.swift */,
+				E85F61F220872FAC00A2D242 /* User.swift */,
+				E85F61F42087304400A2D242 /* UserInfo.swift */,
+				E88BB57A2087296E009F0C26 /* EditViewController.swift */,
+				E88BB5782087012B009F0C26 /* ProfileViewController.swift */,
 				E8D315E3208468AE00A52E21 /* LoginViewController.swift */,
 				E8D315E6208468AF00A52E21 /* ResetPasswordViewController.swift */,
-				E8CAC0FC207F31CC0074B20F /* AppDelegate.swift */,
-				E8CAC0FE207F31CC0074B20F /* ViewController.swift */,
-				E8CAC100207F31CC0074B20F /* Main.storyboard */,
+				E8D315E5208468AF00A52E21 /* SignUpViewController.swift */,
+				E8D315E4208468AE00A52E21 /* HomeViewController.swift */,
 				E8CAC103207F31CC0074B20F /* Assets.xcassets */,
+				E8CAC100207F31CC0074B20F /* Main.storyboard */,
 				E8CAC105207F31CC0074B20F /* LaunchScreen.storyboard */,
+				E8CAC0FC207F31CC0074B20F /* AppDelegate.swift */,
+				E8BA00EF2086F73F007636E0 /* finalProject.entitlements */,
 				E8CAC108207F31CC0074B20F /* Info.plist */,
 				E8D315E12084680A00A52E21 /* GoogleService-Info.plist */,
 			);
@@ -291,11 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88BB57B2087296E009F0C26 /* EditViewController.swift in Sources */,
 				E8D315E7208468AF00A52E21 /* LoginViewController.swift in Sources */,
-				E8CAC0FF207F31CC0074B20F /* ViewController.swift in Sources */,
 				E8CAC0FD207F31CC0074B20F /* AppDelegate.swift in Sources */,
 				E8D315EA208468AF00A52E21 /* ResetPasswordViewController.swift in Sources */,
+				E85F61F320872FAC00A2D242 /* User.swift in Sources */,
+				E88BB5792087012B009F0C26 /* ProfileViewController.swift in Sources */,
 				E8D315E8208468AF00A52E21 /* HomeViewController.swift in Sources */,
+				E85F61F52087304400A2D242 /* UserInfo.swift in Sources */,
 				E8D315E9208468AF00A52E21 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
