@@ -5,59 +5,59 @@
                         {
                         "typeName": "Sandwiches",
                         "productName": [
-                                        "Roast beef   $9.50",
-                                        "BBQ Pulled Beef   $8.95",
-                                        "Pastrami   $10.95",
-                                        "Reuben   $11.95"
+                                        "Roast beef",
+                                        "BBQ Pulled Beef",
+                                        "Pastrami",
+                                        "Reuben"
                                         ]
                         },
                         
                         {
                         "typeName": "Seafood",
                         "productName": [
-                                        "Fish Plate   $12.95",
-                                        "Clam Plate   Market Price",
-                                        "Clam Roll   Market Price"
+                                        "Fish Plate",
+                                        "Clam Plate",
+                                        "Clam Roll"
                                         ]
                         },
                         
                         {
                         "typeName": "Salads",
                         "productName": [
-                                        "Garden Salad   $5.95",
-                                        "Caesar Salad   $6.95",
-                                        "Greek Salad   $8.75"
+                                        "Garden Salad",
+                                        "Caesar Salad",
+                                        "Greek Salad"
                                         ]
                         },
                         {
                         "typeName": "Soups & Chowders",
                         "productName": [
-                                        "Clam Chowder   $6.75",
-                                        "Chicken Noodle Soup   $4.95",
-                                        "Beef Chilli   $4.95"
+                                        "Clam Chowder",
+                                        "Chicken Noodle Soup",
+                                        "Beef Chilli"
                                         
                                         ]
                         },
                         {
                         "typeName": "Kid's Meals",
                         "productName": [
-                                        "Hamburger Plate   $5.95",
-                                        "Cheeseberger Plate   $6.25",
-                                        "Hotdog Plate   $5.25",
-                                        "Grilled Cheese Plate   $5.25",
-                                        "Chicken Finger Plate   $6.75"
+                                        "Hamburger Plate",
+                                        "Cheeseberger Plate",
+                                        "Hotdog Plate",
+                                        "Grilled Cheese Plate",
+                                        "Chicken Finger Plate"
                                         ]
                         },
                         {
                         "typeName": "Sides",
                         "productName": [
-                                        "French Fries   $7.95",
-                                        "Onion Rings   $9.95",
-                                        "Coleslaw   $7.95",
-                                        "Fried Shrimp   $24.95",
-                                        "Cheese Fries   $6.95",
-                                        "Chicken Finger   $10.95",
-                                        "Mac & Cheese   $3.50"
+                                        "French Fries",
+                                        "Onion Rings",
+                                        "Coleslaw",
+                                        "Fried Shrimp",
+                                        "Cheese Fries",
+                                        "Chicken Finger",
+                                        "Mac & Cheese"
                                         ]
                         }
                         
