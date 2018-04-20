@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65ED1C08208AA9000083450F /* GroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1C07208AA9000083450F /* GroupTableView.swift */; };
 		C940B2988EE978BD95864E40 /* Pods_project_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01216B026E6D41E99F3F2891 /* Pods_project_swift.framework */; };
 		E84587932088A93600BCA13D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84587922088A93600BCA13D /* Users.swift */; };
 		E84587952088A95200BCA13D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84587942088A95200BCA13D /* EditViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		01216B026E6D41E99F3F2891 /* Pods_project_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCCBBAAFD7D4E6C5502F6E1 /* Pods-project-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-project-swift/Pods-project-swift.release.xcconfig"; sourceTree = "<group>"; };
+		65ED1C07208AA9000083450F /* GroupTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableView.swift; sourceTree = "<group>"; };
 		E1D12ED2EBBF178130884C84 /* Pods-project-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project-swift/Pods-project-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E84587922088A93600BCA13D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E84587942088A95200BCA13D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				E845879E2088A9B700BCA13D /* HomeViewController.swift */,
+				65ED1C07208AA9000083450F /* GroupTableView.swift */,
 				E8DF8F232089BF9C00B5D6CC /* CheckViewController.swift */,
 			);
 			path = Menu;
@@ -361,6 +364,7 @@
 				E8BE323A2088A87800EDBB11 /* AppDelegate.swift in Sources */,
 				E845879F2088A9B700BCA13D /* HomeViewController.swift in Sources */,
 				E84587972088A96300BCA13D /* ProfileViewController.swift in Sources */,
+				65ED1C08208AA9000083450F /* GroupTableView.swift in Sources */,
 				E845879B2088A98F00BCA13D /* ResetPasswordViewController.swift in Sources */,
 				E8DF8F242089BF9C00B5D6CC /* CheckViewController.swift in Sources */,
 				E84587992088A97900BCA13D /* LoginViewController.swift in Sources */,
