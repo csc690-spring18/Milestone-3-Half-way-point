@@ -94,7 +94,7 @@ class PrdouctMenuTableViewCell: UITableViewCell,CAAnimationDelegate {
         self.productPrice.text = self.productPriceStr
     }
     
-    func plusBtnClick(_ btn:UIButton){
+    @objc func plusBtnClick(_ btn:UIButton){
         let point:CGPoint = self.convert(btn.frame.origin, to: (UIApplication.shared.delegate?.window)!)
         let circleView:UIView = UIView(frame:CGRect(x: point.x,y: point.y,width: 20,height: 20))
         circleView.layer.cornerRadius = btn.frame.width / 2
@@ -133,7 +133,7 @@ class PrdouctMenuTableViewCell: UITableViewCell,CAAnimationDelegate {
         }
     }
     
-    func minusBtnClick(_ btn:UIButton)
+    @objc func minusBtnClick(_ btn:UIButton)
     {
            
         if Int(self.buyCount.text!) > 1
