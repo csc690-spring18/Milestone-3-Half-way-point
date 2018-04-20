@@ -17,6 +17,7 @@
 		4EA188081C72CF610090D978 /* GroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA188061C72CF610090D978 /* GroupTableView.swift */; };
 		4EA188091C72CF610090D978 /* PrdouctMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA188071C72CF610090D978 /* PrdouctMenuTableViewCell.swift */; };
 		4EA1880B1C72CFCE0090D978 /* MenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1880A1C72CFCE0090D978 /* MenuData.json */; };
+		E89DAB4E2089FB57003DFEC7 /* MenuPrice.json in Resources */ = {isa = PBXBuildFile; fileRef = E89DAB4D2089FB57003DFEC7 /* MenuPrice.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		4EA188061C72CF610090D978 /* GroupTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableView.swift; sourceTree = "<group>"; };
 		4EA188071C72CF610090D978 /* PrdouctMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrdouctMenuTableViewCell.swift; sourceTree = "<group>"; };
 		4EA1880A1C72CFCE0090D978 /* MenuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuData.json; sourceTree = "<group>"; };
+		E89DAB4D2089FB57003DFEC7 /* MenuPrice.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MenuPrice.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				4EA1880A1C72CFCE0090D978 /* MenuData.json */,
+				E89DAB4D2089FB57003DFEC7 /* MenuPrice.json */,
 				4EA188061C72CF610090D978 /* GroupTableView.swift */,
 				4EA188071C72CF610090D978 /* PrdouctMenuTableViewCell.swift */,
-				4EA187D81C72CE320090D978 /* AppDelegate.swift */,
 				4EA187DA1C72CE320090D978 /* ViewController.swift */,
+				4EA187D81C72CE320090D978 /* AppDelegate.swift */,
 				4EA187DC1C72CE320090D978 /* Main.storyboard */,
 				4EA187DF1C72CE320090D978 /* Assets.xcassets */,
 				4EA187E11C72CE320090D978 /* LaunchScreen.storyboard */,
@@ -246,6 +249,7 @@
 				4EA187E31C72CE320090D978 /* LaunchScreen.storyboard in Resources */,
 				4EA187E01C72CE320090D978 /* Assets.xcassets in Resources */,
 				4EA187DE1C72CE320090D978 /* Main.storyboard in Resources */,
+				E89DAB4E2089FB57003DFEC7 /* MenuPrice.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

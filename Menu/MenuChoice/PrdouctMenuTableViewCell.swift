@@ -31,22 +31,32 @@ let screenWidth  = UIScreen.main.bounds.width
 
 class PrdouctMenuTableViewCell: UITableViewCell,CAAnimationDelegate {
     var productName:UILabel!
+    var productPrice: UILabel!  // Price
     var minusBtn:UIButton!
     var plusBtn:UIButton!
     var buyCount:UILabel!
     var separateLine:UIView?
     var productNameStr:String?
+    var productPriceStr: String?
     
     var addProClosure:((UITableViewCell,Bool)->())?
 
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        // Product Name
         self.productName = UILabel(frame:CGRect(x: 15,y: 15,width: (screenWidth*0.7) - 30,height: 20))
         self.productName.font = UIFont.systemFont(ofSize: 15)
         self.productName.textColor = UIColor.black
         self.productName.textAlignment = NSTextAlignment.left
         self.contentView.addSubview(self.productName)
+        
+        // Product Price
+        self.productPrice = UILabel(frame:CGRect(x: 200,y: 15,width: (screenWidth*0.7) - 30,height: 20))    // change the position of price
+        self.productPrice.font = UIFont.systemFont(ofSize: 15)
+        self.productPrice.textColor = UIColor.black
+        self.productPrice.textAlignment = NSTextAlignment.left
+        self.contentView.addSubview(self.productPrice)
         
         self.plusBtn = UIButton(type: UIButtonType.custom)
         self.plusBtn.frame =  CGRect(x: (screenWidth*0.7) - 59,y: 36,width: 44,height: 44)
@@ -81,6 +91,7 @@ class PrdouctMenuTableViewCell: UITableViewCell,CAAnimationDelegate {
     
     override func layoutSubviews() {
         self.productName.text = self.productNameStr
+        self.productPrice.text = self.productPriceStr
     }
     
     func plusBtnClick(_ btn:UIButton){

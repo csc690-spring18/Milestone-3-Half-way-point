@@ -31,11 +31,12 @@ class GroupTableView: UIView,UITableViewDelegate,UITableViewDataSource {
     var classifyTableView:UITableView!
     var productTypeArr:[String] = []
     var productNameArr:[AnyObject] = []
+    var productPriceArr:[AnyObject] = []   // Price
     var currentExtendSection:Int = 0
     var isScrollSetSelect = false
     var isScrollClassiftyTable = false
     
-    init(frame:CGRect, MenuTypeArr:[String], proNameArr:[AnyObject]) {
+    override init(frame:CGRect) {
         super.init(frame: frame)
         self.initData()
         self.groupTableView = UITableView(frame: CGRect(x: frame.width*0.3, y: 0, width: frame.width*0.7, height: frame.height), style: UITableViewStyle.plain)
@@ -51,17 +52,19 @@ class GroupTableView: UIView,UITableViewDelegate,UITableViewDataSource {
         self.classifyTableView.dataSource = self;
         self.classifyTableView.tableFooterView = UIView()
         self.addSubview(self.classifyTableView)
-        
-        
-        
     }
+    
+    
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    
     func  initData()
     {
+        // Product Name
         let path:String = (Bundle.main.path(forResource: "MenuData", ofType: "json"))!
         let data:Data = try! Data(contentsOf: URL(fileURLWithPath: path))
         let json:AnyObject = try!JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as AnyObject
@@ -71,6 +74,17 @@ class GroupTableView: UIView,UITableViewDelegate,UITableViewDataSource {
         {
             productTypeArr.append(productMenuArr[i]["typeName"] as! String)
             productNameArr.append(productMenuArr[i]["productName"] as! [String] as AnyObject)
+        }
+        
+        // Product Price
+        let pricePath:String = (Bundle.main.path(forResource: "MenuPrice", ofType: "json"))!
+        let pricePata:Data = try! Data(contentsOf: URL(fileURLWithPath: pricePath))
+        let priceJson:AnyObject = try!JSONSerialization.jsonObject(with: pricePata, options: JSONSerialization.ReadingOptions.allowFragments) as AnyObject
+        let priceResultDict = priceJson.object(forKey: "data") as! Dictionary<String,AnyObject>
+        let priceProductMenuArr:[AnyObject] = priceResultDict["productType"] as! Array
+        for i:Int in 0 ..< priceProductMenuArr.count
+        {
+            productPriceArr.append(priceProductMenuArr[i]["productPrice"] as! [String] as AnyObject)
         }
 
     }
@@ -113,7 +127,9 @@ class GroupTableView: UIView,UITableViewDelegate,UITableViewDataSource {
         {
             if productNameArr[indexPath.section].count > indexPath.row
             {
-                extendCell.productNameStr = (productNameArr[indexPath.section] as! Array)[indexPath.row] 
+                extendCell.productNameStr = (productNameArr[indexPath.section] as! Array)[indexPath.row]
+                extendCell.productPriceStr = (productPriceArr[indexPath.section] as! Array)[indexPath.row]
+
             }
             extendCell.addProClosure = {(cell:UITableViewCell,isAddProduct:Bool) in
                 let indexPath:IndexPath = (self.groupTableView.indexPath(for: cell))!
