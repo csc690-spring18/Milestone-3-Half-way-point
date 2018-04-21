@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		65ED1C08208AA9000083450F /* GroupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1C07208AA9000083450F /* GroupTableView.swift */; };
 		65ED1C0A208AAD460083450F /* ProductMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1C09208AAD460083450F /* ProductMenuTableViewCell.swift */; };
+		65ED1C11208AEA7A0083450F /* MenuPrice.json in Resources */ = {isa = PBXBuildFile; fileRef = 65ED1C10208AEA7A0083450F /* MenuPrice.json */; };
+		65ED1C15208AEC540083450F /* MenuData.json in Resources */ = {isa = PBXBuildFile; fileRef = 65ED1C14208AEC540083450F /* MenuData.json */; };
+		65ED1C17208AF0F20083450F /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED1C16208AF0F20083450F /* ConfirmViewController.swift */; };
 		C940B2988EE978BD95864E40 /* Pods_project_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01216B026E6D41E99F3F2891 /* Pods_project_swift.framework */; };
 		E84587932088A93600BCA13D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84587922088A93600BCA13D /* Users.swift */; };
 		E84587952088A95200BCA13D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84587942088A95200BCA13D /* EditViewController.swift */; };
@@ -16,14 +19,14 @@
 		E84587992088A97900BCA13D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84587982088A97900BCA13D /* LoginViewController.swift */; };
 		E845879B2088A98F00BCA13D /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845879A2088A98F00BCA13D /* ResetPasswordViewController.swift */; };
 		E845879D2088A9A800BCA13D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845879C2088A9A800BCA13D /* SignUpViewController.swift */; };
-		E845879F2088A9B700BCA13D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845879E2088A9B700BCA13D /* HomeViewController.swift */; };
+		E845879F2088A9B700BCA13D /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845879E2088A9B700BCA13D /* CheckViewController.swift */; };
 		E84587A22088AA6F00BCA13D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E84587A12088AA6F00BCA13D /* GoogleService-Info.plist */; };
 		E8BE323A2088A87800EDBB11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE32392088A87800EDBB11 /* AppDelegate.swift */; };
 		E8BE323F2088A87800EDBB11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BE323D2088A87800EDBB11 /* Main.storyboard */; };
 		E8BE32412088A87900EDBB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BE32402088A87900EDBB11 /* Assets.xcassets */; };
 		E8BE32442088A87900EDBB11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8BE32422088A87900EDBB11 /* LaunchScreen.storyboard */; };
 		E8BE324F2088A87900EDBB11 /* project_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BE324E2088A87900EDBB11 /* project_swiftTests.swift */; };
-		E8DF8F242089BF9C00B5D6CC /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF8F232089BF9C00B5D6CC /* CheckViewController.swift */; };
+		E8DF8F242089BF9C00B5D6CC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF8F232089BF9C00B5D6CC /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		1BCCBBAAFD7D4E6C5502F6E1 /* Pods-project-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-project-swift/Pods-project-swift.release.xcconfig"; sourceTree = "<group>"; };
 		65ED1C07208AA9000083450F /* GroupTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupTableView.swift; sourceTree = "<group>"; };
 		65ED1C09208AAD460083450F /* ProductMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductMenuTableViewCell.swift; sourceTree = "<group>"; };
+		65ED1C10208AEA7A0083450F /* MenuPrice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuPrice.json; sourceTree = "<group>"; };
+		65ED1C14208AEC540083450F /* MenuData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuData.json; sourceTree = "<group>"; };
+		65ED1C16208AF0F20083450F /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		E1D12ED2EBBF178130884C84 /* Pods-project-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project-swift/Pods-project-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		E84587922088A93600BCA13D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		E84587942088A95200BCA13D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +54,7 @@
 		E84587982088A97900BCA13D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E845879A2088A98F00BCA13D /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		E845879C2088A9A800BCA13D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		E845879E2088A9B700BCA13D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E845879E2088A9B700BCA13D /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		E84587A02088A9EA00BCA13D /* project-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "project-swift.entitlements"; sourceTree = "<group>"; };
 		E84587A12088AA6F00BCA13D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8BE32362088A87800EDBB11 /* project-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +66,7 @@
 		E8BE324A2088A87900EDBB11 /* project-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BE324E2088A87900EDBB11 /* project_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_swiftTests.swift; sourceTree = "<group>"; };
 		E8BE32502088A87900EDBB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8DF8F232089BF9C00B5D6CC /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		E8DF8F232089BF9C00B5D6CC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,15 @@
 				01216B026E6D41E99F3F2891 /* Pods_project_swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65ED1C0B208AE7360083450F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				65ED1C07208AA9000083450F /* GroupTableView.swift */,
+				65ED1C09208AAD460083450F /* ProductMenuTableViewCell.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		95A89CC3B2167DC731C22AA8 /* Pods */ = {
@@ -122,6 +137,8 @@
 		E8BE32382088A87800EDBB11 /* project-swift */ = {
 			isa = PBXGroup;
 			children = (
+				65ED1C14208AEC540083450F /* MenuData.json */,
+				65ED1C10208AEA7A0083450F /* MenuPrice.json */,
 				E8E5A9632089B0F70086F596 /* Model */,
 				E8E5A9642089B10B0086F596 /* View */,
 				E8E5A9652089B1160086F596 /* Controller */,
@@ -146,6 +163,7 @@
 		E8E5A9632089B0F70086F596 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65ED1C0B208AE7360083450F /* Menu */,
 				E8E5A9662089B11D0086F596 /* User */,
 			);
 			path = Model;
@@ -200,10 +218,9 @@
 		E8E5A9692089B16F0086F596 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				E845879E2088A9B700BCA13D /* HomeViewController.swift */,
-				65ED1C07208AA9000083450F /* GroupTableView.swift */,
-				65ED1C09208AAD460083450F /* ProductMenuTableViewCell.swift */,
-				E8DF8F232089BF9C00B5D6CC /* CheckViewController.swift */,
+				E845879E2088A9B700BCA13D /* CheckViewController.swift */,
+				E8DF8F232089BF9C00B5D6CC /* MenuViewController.swift */,
+				65ED1C16208AF0F20083450F /* ConfirmViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -298,8 +315,10 @@
 			files = (
 				E8BE32442088A87900EDBB11 /* LaunchScreen.storyboard in Resources */,
 				E84587A22088AA6F00BCA13D /* GoogleService-Info.plist in Resources */,
+				65ED1C15208AEC540083450F /* MenuData.json in Resources */,
 				E8BE32412088A87900EDBB11 /* Assets.xcassets in Resources */,
 				E8BE323F2088A87800EDBB11 /* Main.storyboard in Resources */,
+				65ED1C11208AEA7A0083450F /* MenuPrice.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,13 +384,14 @@
 				E84587932088A93600BCA13D /* Users.swift in Sources */,
 				E845879D2088A9A800BCA13D /* SignUpViewController.swift in Sources */,
 				E8BE323A2088A87800EDBB11 /* AppDelegate.swift in Sources */,
-				E845879F2088A9B700BCA13D /* HomeViewController.swift in Sources */,
+				E845879F2088A9B700BCA13D /* CheckViewController.swift in Sources */,
 				E84587972088A96300BCA13D /* ProfileViewController.swift in Sources */,
 				65ED1C08208AA9000083450F /* GroupTableView.swift in Sources */,
 				E845879B2088A98F00BCA13D /* ResetPasswordViewController.swift in Sources */,
-				E8DF8F242089BF9C00B5D6CC /* CheckViewController.swift in Sources */,
+				E8DF8F242089BF9C00B5D6CC /* MenuViewController.swift in Sources */,
 				65ED1C0A208AAD460083450F /* ProductMenuTableViewCell.swift in Sources */,
 				E84587992088A97900BCA13D /* LoginViewController.swift in Sources */,
+				65ED1C17208AF0F20083450F /* ConfirmViewController.swift in Sources */,
 				E84587952088A95200BCA13D /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

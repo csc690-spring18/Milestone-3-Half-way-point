@@ -26,7 +26,7 @@ class SignUpViewController: UIViewController {
                     if error == nil {
                         //print("You have successfully signed up")
                         
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
                         self.present(vc!, animated: true, completion: nil)
                         
                     } else {

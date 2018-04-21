@@ -38,16 +38,16 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    @IBAction func backHomeButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+    @IBAction func checkButton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
         self.present(vc!, animated: true, completion: nil)
     }
-    
+   
     @IBAction func logoutButton(_ sender: Any) {
         if Auth.auth().currentUser != nil {
             do {
                 try Auth.auth().signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu")
                 present(vc, animated: true, completion: nil)
                 
             } catch let error as NSError {

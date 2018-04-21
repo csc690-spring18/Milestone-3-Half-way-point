@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T8d-o2-dMW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NF1-6S-e4H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -226,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="-692" y="2445"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Check View Controller-->
         <scene sceneID="lJF-YJ-wbw">
             <objects>
-                <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YKQ-NF-K0V" customClass="HomeViewController" customModule="project_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Check" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YKQ-NF-K0V" customClass="CheckViewController" customModule="project_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q01-0H-fqD"/>
                         <viewControllerLayoutGuide type="bottom" id="0Jh-bq-tmV"/>
@@ -253,18 +253,18 @@
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="profileButton:" destination="YKQ-NF-K0V" eventType="touchUpInside" id="Ywc-Qa-3od"/>
+                                    <action selector="profileButton:" destination="YKQ-NF-K0V" eventType="touchUpInside" id="tFl-mH-rvD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOk-Kv-VxX">
                                 <rect key="frame" x="113" y="567" width="159" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <state key="normal" title="Check Out">
+                                <state key="normal" title="Confirm">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="checkOutButton:" destination="YKQ-NF-K0V" eventType="touchUpInside" id="HrW-5k-hJa"/>
+                                    <action selector="confirmButton:" destination="YKQ-NF-K0V" eventType="touchUpInside" id="CKt-a2-h4C"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -276,20 +276,20 @@
             </objects>
             <point key="canvasLocation" x="1464.8" y="1593.5532233883059"/>
         </scene>
-        <!--Check View Controller-->
-        <scene sceneID="gnV-fW-0hS">
+        <!--Confirm View Controller-->
+        <scene sceneID="0JG-yL-l9v">
             <objects>
-                <viewController storyboardIdentifier="Check" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T8d-o2-dMW" customClass="CheckViewController" customModule="project_swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Ck-gd-QYe">
+                <viewController storyboardIdentifier="Confirm" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Is8-sS-DKr" customClass="ConfirmViewController" customModule="project_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TP1-9s-JNS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="CWr-VW-lnU"/>
+                        <viewLayoutGuide key="safeArea" id="oVR-47-368"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uNf-Sa-Odk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ei-Rr-OU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792.79999999999995" y="1150.0749625187407"/>
+            <point key="canvasLocation" x="2256" y="1599"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rmI-3X-1H3">
@@ -332,11 +332,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Menu">
+                                <state key="normal" title="Check">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="backHomeButton:" destination="rQ0-QE-QPZ" eventType="touchUpInside" id="bPn-Hr-eBx"/>
+                                    <action selector="checkButton:" destination="rQ0-QE-QPZ" eventType="touchUpInside" id="hHn-a2-RM2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRd-FP-Yy4">
@@ -380,7 +380,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLd-2Z-4Xf">
-                                <rect key="frame" x="56" y="89" width="140" height="83"/>
+                                <rect key="frame" x="56" y="89" width="280" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAo-fA-ACT">
@@ -408,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slO-GE-L7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="2445"/>
+            <point key="canvasLocation" x="2101.5999999999999" y="2444.527736131934"/>
         </scene>
         <!--Edit-->
         <scene sceneID="evd-Aa-GTV">
@@ -545,8 +545,38 @@
             </objects>
             <point key="canvasLocation" x="3092" y="2444.527736131934"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="9Hy-Df-vQE">
+            <objects>
+                <viewController storyboardIdentifier="Menu" id="NF1-6S-e4H" customClass="MenuViewController" customModule="project_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GcN-Qv-IxC"/>
+                        <viewControllerLayoutGuide type="bottom" id="pe1-hl-jHf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0wC-Fc-ljV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvm-o2-UZL">
+                                <rect key="frame" x="300" y="20" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Check Out"/>
+                                <connections>
+                                    <action selector="checkoutButton:" destination="NF1-6S-e4H" eventType="touchUpInside" id="IUT-1m-NyF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mqb-qO-fpz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2X-c7-F9X" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="1594"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="sVj-pF-tdV"/>
         <segue reference="tWb-FO-SRJ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
                 
                 if error == nil {
                     //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
                     self.present(vc!, animated: true, completion: nil)
                     
                 } else {
@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func cancelButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
         self.present(vc!, animated: true, completion: nil)
     }
     

@@ -1,66 +1,79 @@
-//
-//  CheckViewController.swift
-//  project-swift
-//
-//  Created by Bo Li on 4/19/18.
-//  Copyright © 2018 Bo Li. All rights reserved.
-//
-
 import UIKit
+import Firebase
 
 class CheckViewController: UIViewController {
-    var productTypeArr:[String] = []
-    var productNameArr:[AnyObject] = []
-    var productPriceArr:[AnyObject] = []   // Price
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "balabala restaurant"
-        self.view.backgroundColor = UIColor.white
-        self.initData()
-        self.automaticallyAdjustsScrollViewInsets = false
+        
+        // Do any additional setup after loading the view.
     }
     
-    func  initData()
-    {
-        // Product Name
-        let path:String = (Bundle.main.path(forResource: "MenuData", ofType: "json"))!
-        let data:Data = try! Data(contentsOf: URL(fileURLWithPath: path))
-        let json:AnyObject = try!JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as AnyObject
-        let resultDict = json.object(forKey: "data") as! Dictionary<String,AnyObject>
-        let productMenuArr:[AnyObject] = resultDict["productType"] as! Array
-        
-        for i:Int in 0 ..< productMenuArr.count
-        {
-            productTypeArr.append(productMenuArr[i]["typeName"] as! String)
-            productNameArr.append(productMenuArr[i]["productName"] as! [AnyObject] as AnyObject)
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func profileButton(_ sender: Any) {
+        // check whether user has valid Auth session Firebase
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            if user != nil {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Profile")
+                self.present(vc!, animated: true, completion: nil)
+            } else {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+                self.present(vc!, animated: true, completion: nil)
+            }
         }
-        
-        // Product Price
-        let pricePath:String = (Bundle.main.path(forResource: "MenuPrice", ofType: "json"))!
-        let priceData:Data = try! Data(contentsOf: URL(fileURLWithPath: pricePath))
-        let priceJson:AnyObject = try!JSONSerialization.jsonObject(with: priceData, options: JSONSerialization.ReadingOptions.allowFragments) as AnyObject
-        let priceResultDict = priceJson.object(forKey: "data") as! Dictionary<String,AnyObject>
-        let priceProductMenuArr:[AnyObject] = priceResultDict["productType"] as! Array
-        
-        for i:Int in 0 ..< priceProductMenuArr.count
-        {
-            productPriceArr.append(priceProductMenuArr[i]["productPrice"] as! [AnyObject] as AnyObject)
+    }
+    
+
+    @IBAction func confirmButton(_ sender: Any) {
+        // check whether user has valid Auth session Firebase
+        Auth.auth().addStateDidChangeListener() { auth, user in
+            if user != nil {
+
+                // check whether use fill in their info of profile
+                let ref = Database.database().reference()
+                let userID = Auth.auth().currentUser?.uid
+
+                ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+
+                    let value = snapshot.value as? NSDictionary
+                    // user could check out if profile has enough info
+                    if (value?["name"] as? String ?? "" != ""  &&
+                        value?["address"] as? String ?? "" != "" &&
+                        value?["phone"] as? String ?? "" != "") {
+
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Confirm")
+                        self.present(vc!, animated: true, completion: nil)
+
+                    } else {
+                        let alertController = UIAlertController(title: "Oops!", message: "Please complete Profile, we could contact and delivery to you!", preferredStyle: .alert)
+
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alertController.addAction(defaultAction)
+
+                        self.present(alertController, animated: true, completion: nil)
+
+                        //                        print("Testing")
+                        //
+                        //                        self.dismiss(animated: false) {
+                        //                            // force user to go to edit page to fill in info of profile
+                        //                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Edit")
+                        //                            self.present(vc!, animated: true, completion: nil)
+                        //                        }
+                    }
+                }) { (error) in
+                    print(error.localizedDescription)
+                }
+            } else {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+                self.present(vc!, animated: true, completion: nil)
+            }
         }
-        
-        
-        self.addSubView()
-        self.addSubViewPrice()
     }
+  
     
-    
-    func addSubView(){
-        let classifyTable = GroupTableView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: screenHeight-64))
-        self.view.addSubview(classifyTable)
-    }
-    
-    func addSubViewPrice(){
-        let classifyTable = GroupTableView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: screenHeight-64))
-        self.view.addSubview(classifyTable)
-    }
 }
