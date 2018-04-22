@@ -243,12 +243,21 @@
                             </items>
                         </toolbar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yLM-AD-OgF">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="itemCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yLM-AD-OgF">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yLM-AD-OgF" id="QWD-6M-MVY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvs-Qn-2b6">
+                                            <rect key="frame" x="16" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -265,7 +274,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Confirm" id="44r-a7-tRy">
                             <connections>
-                                <segue destination="Is8-sS-DKr" kind="show" id="L6f-2p-Wip"/>
+                                <segue destination="Is8-sS-DKr" kind="presentation" id="Xwg-0S-2NO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

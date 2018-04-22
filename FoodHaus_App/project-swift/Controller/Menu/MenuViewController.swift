@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "balabala restaurant"
+        self.title = "FoodHaus"
         self.view.backgroundColor = UIColor.white
         self.initData()
         self.automaticallyAdjustsScrollViewInsets = false
