@@ -265,7 +265,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Confirm" id="44r-a7-tRy">
                             <connections>
-                                <segue destination="Is8-sS-DKr" kind="modal" id="x7C-IL-qiE"/>
+                                <segue destination="Is8-sS-DKr" kind="show" id="L6f-2p-Wip"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -1,7 +1,9 @@
 import UIKit
 import Firebase
 
-class CheckViewController: UIViewController {
+class CheckViewController: UITableViewController {
+    
+    var checkList = CheckTableModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
