@@ -239,20 +239,14 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Checkout" id="mNg-Us-0Ol">
-                                    <barButtonItem key="rightBarButtonItem" style="plain" id="8O0-Zr-iNH">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="led-m3-Uae">
-                                            <rect key="frame" x="300" y="0.0" width="59" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <state key="normal" title="Profile">
-                                                <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="profileButton:" destination="F1D-q5-JIO" eventType="touchUpInside" id="wlc-6E-9sR"/>
-                                            </connections>
-                                        </button>
+                                    <barButtonItem key="leftBarButtonItem" title="Back" id="Nq4-a2-mJR">
                                         <connections>
-                                            <action selector="profileBtn:" destination="F1D-q5-JIO" id="avQ-MY-FjK"/>
+                                            <segue destination="NF1-6S-e4H" kind="presentation" id="qKu-Sk-C2p"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="Profile" id="SIF-ma-gWn">
+                                        <connections>
+                                            <action selector="profileBtn:" destination="F1D-q5-JIO" id="YwQ-ZA-mxi"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -267,6 +261,7 @@
                             </state>
                             <connections>
                                 <action selector="confirmBtn:" destination="F1D-q5-JIO" eventType="touchUpInside" id="Pzt-0i-OKa"/>
+                                <segue destination="Is8-sS-DKr" kind="presentation" id="rgH-F7-U86"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -286,17 +281,6 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzx-lI-aLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wh6-aW-QHW">
-                    <rect key="frame" x="0.0" y="0.0" width="59" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <state key="normal" title="Profile">
-                        <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="profileButton:" destination="F1D-q5-JIO" eventType="touchUpInside" id="3ik-FW-nsz"/>
-                    </connections>
-                </button>
                 <exit id="F1D-q5-JIO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1197.5999999999999" y="1593.5532233883059"/>
@@ -309,14 +293,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBm-dp-hgU">
-                                <rect key="frame" x="108" y="581" width="159" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <state key="normal" title="Confirm">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Order Successfully!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-1H-F1G">
                                 <rect key="frame" x="81" y="240" width="213" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -324,6 +300,17 @@
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBm-dp-hgU">
+                                <rect key="frame" x="87" y="558" width="200" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="Back to menu">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackToMenuButton:" destination="Is8-sS-DKr" eventType="touchUpInside" id="7mI-UM-bgo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oVR-47-368"/>
@@ -331,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ei-Rr-OU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="1594"/>
+            <point key="canvasLocation" x="2160.8000000000002" y="1593.5532233883059"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rmI-3X-1H3">

@@ -14,7 +14,9 @@ class CheckViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func profileButton(_ sender: Any) {
+
+
+    @IBAction func profileBtn(_ sender: Any) {
         // check whether user has valid Auth session Firebase
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
@@ -26,7 +28,6 @@ class CheckViewController: UIViewController {
             }
         }
     }
-
     
     
     @IBAction func confirmBtn(_ sender: Any) {
