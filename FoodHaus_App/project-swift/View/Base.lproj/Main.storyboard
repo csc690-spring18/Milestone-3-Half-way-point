@@ -237,7 +237,9 @@
                             <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
-                                <barButtonItem title="Profile" id="Dm0-YI-om7"/>
+                                <barButtonItem title="Cancel" id="ZPK-JU-ixU"/>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="vd0-Ym-4cn"/>
+                                <barButtonItem title="Profile" id="Lgf-cc-PT9"/>
                             </items>
                         </toolbar>
                         <prototypes>
@@ -261,12 +263,16 @@
                                 <segue destination="NF1-6S-e4H" kind="show" id="aOk-HW-aRg"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Confirm" id="44r-a7-tRy"/>
+                        <barButtonItem key="rightBarButtonItem" title="Confirm" id="44r-a7-tRy">
+                            <connections>
+                                <segue destination="Is8-sS-DKr" kind="modal" id="x7C-IL-qiE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ha-Ic-v7x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1818" y="1594"/>
+            <point key="canvasLocation" x="1816.8" y="1593.5532233883059"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yeK-f6-Zgd">
