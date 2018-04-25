@@ -15,7 +15,7 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "balabala restaurant"
+        self.title = "FoodHaus"
         self.view.backgroundColor = UIColor.white
         self.initData()
         self.automaticallyAdjustsScrollViewInsets = false
@@ -53,11 +53,7 @@ class MenuViewController: UIViewController {
         self.addSubViewPrice()
     }
     
-    // check out button connect to Check out page
-    @IBAction func checkoutButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
-        self.present(vc!, animated: true, completion: nil)
-    }
+
     
     
     func addSubView(){
