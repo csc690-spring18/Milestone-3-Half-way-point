@@ -1,27 +1,19 @@
 import UIKit
 import Firebase
 
-class CheckViewController: UITableViewController {
+class CheckViewController: UIViewController {
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell")
-        
-        return cell!
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        // Do any additional setup after loading the view.
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
     
     @IBAction func profileButton(_ sender: Any) {
@@ -37,8 +29,13 @@ class CheckViewController: UITableViewController {
         }
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Menu")
+        self.present(vc!, animated: true, completion: nil)
+    }
     
-    @IBAction func confirmBtn(_ sender: Any) {
+    
+    @IBAction func confirmButton(_ sender: Any) {
         // check whether user has valid Auth session Firebase
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
@@ -84,6 +81,9 @@ class CheckViewController: UITableViewController {
         }
     }
     
-  
+    @IBAction func cancelButton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Menu")
+        self.present(vc!, animated: true, completion: nil)
+    }
     
 }

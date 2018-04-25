@@ -48,5 +48,11 @@ class SignUpViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func loginButton(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+        self.present(vc!, animated: true, completion: nil)
+    }
+    
 }
 

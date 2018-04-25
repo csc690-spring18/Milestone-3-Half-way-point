@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
         
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
-                self.performSegue(withIdentifier: "LoginToHome", sender: nil)
+                self.performSegue(withIdentifier: "LoginToCheck", sender: nil)
             }
         }
     }
