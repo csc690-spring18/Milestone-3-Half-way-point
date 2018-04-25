@@ -28,8 +28,8 @@ class EditViewController: UIViewController {
             let name = nameTextField.text,
             let phone = phoneTextField.text,
             let address = addressTextField.text
-            else {
-                return
+        else {
+            return
         }
         
         // user has to fill in all info in their profile
@@ -38,25 +38,17 @@ class EditViewController: UIViewController {
                                                                  "name": name,
                                                                  "phone": phone,
                                                                  "address": address])
+     
+            dismiss(animated: true, completion: nil)
             
-            // go back to profile page
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Profile")
-            self.present(vc!, animated: true, completion: nil)
         } else {
             //Tells the user that they need to fill in all info
-            let alertController = UIAlertController(title: "Tips", message: "Please fill in all information so that we could contact and delivery to you", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Oops", message: "Please fill in all information so that we could contact and delivery to you", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             
             self.present(alertController, animated: true, completion: nil)
         }
-        
-    }
-    
-    @IBAction func cancelButton(_ sender: Any) {
-        // go back to profile page
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Profile")
-        self.present(vc!, animated: true, completion: nil)
     }
 }

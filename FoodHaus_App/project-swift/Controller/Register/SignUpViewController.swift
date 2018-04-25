@@ -24,9 +24,7 @@ class SignUpViewController: UIViewController {
                 Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                     
                     if error == nil {
-                        //print("You have successfully signed up")
-                        
-                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
+                        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
                         self.present(vc!, animated: true, completion: nil)
                         
                     } else {
@@ -48,11 +46,5 @@ class SignUpViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func loginButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-        self.present(vc!, animated: true, completion: nil)
-    }
-    
 }
 

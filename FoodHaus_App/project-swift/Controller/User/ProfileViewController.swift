@@ -28,33 +28,16 @@ class ProfileViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-    
-    @IBAction func editButton(_ sender: Any) {
-        Auth.auth().addStateDidChangeListener() { auth, user in
-            if user != nil {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Edit")
-                self.present(vc!, animated: true, completion: nil)
-            }
-        }
-    }
-    
-    @IBAction func checkButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
-        self.present(vc!, animated: true, completion: nil)
-    }
+  
    
     @IBAction func logoutButton(_ sender: Any) {
         if Auth.auth().currentUser != nil {
             do {
                 try Auth.auth().signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Menu")
-                present(vc, animated: true, completion: nil)
-                
+                self.dismiss(animated: true, completion: nil)
             } catch let error as NSError {
                 print(error.localizedDescription)
             }
         }
-    
     }
-    
 }

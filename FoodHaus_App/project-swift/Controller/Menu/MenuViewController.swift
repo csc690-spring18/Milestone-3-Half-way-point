@@ -48,13 +48,9 @@ class MenuViewController: UIViewController {
             productPriceArr.append(priceProductMenuArr[i]["productPrice"] as! [AnyObject] as AnyObject)
         }
         
-        
         self.addSubView()
         self.addSubViewPrice()
     }
-    
-
-    
     
     func addSubView(){
         let classifyTable = GroupTableView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: screenHeight-64))

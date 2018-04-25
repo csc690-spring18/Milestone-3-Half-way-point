@@ -9,16 +9,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         Auth.auth().addStateDidChangeListener() { auth, user in
             if user != nil {
-                self.performSegue(withIdentifier: "LoginToCheck", sender: nil)
+                self.performSegue(withIdentifier: "LoginToMenu", sender: self)
             }
         }
     }
     
+    
     //Login Action
-    @IBAction func loginAction(_ sender: AnyObject) {
+    @IBAction func loginButton(_ sender: Any) {
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
@@ -35,10 +36,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                 
                 if error == nil {
-                    //Go to the HomeViewController if the login is sucessful
-                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
-                    self.present(vc!, animated: true, completion: nil)
-                    
+                    self.performSegue(withIdentifier: "LoginToMenu", sender: self)
                 } else {
                     
                     //Tells the user that there is an error and then gets firebase to tell them the error
@@ -52,10 +50,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func cancelButton(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Check")
-        self.present(vc!, animated: true, completion: nil)
-    }
-    
+  
+ 
 }
